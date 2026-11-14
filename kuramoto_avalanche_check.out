@@ -1,0 +1,13 @@
+N=2000 mean degree=8.5
+K= 0.5 r=0.023 bin=0.01 empty_bins=0.287 n_avalanches=2110 max=45
+K= 0.5 r=0.023 bin=0.10 empty_bins=0.000 n_avalanches=0 max=0
+K= 1.0 r=0.039 bin=0.01 empty_bins=0.303 n_avalanches=2106 max=37
+K= 1.0 r=0.039 bin=0.10 empty_bins=0.000 n_avalanches=0 max=0
+K= 1.5 r=0.048 bin=0.01 empty_bins=0.349 n_avalanches=2289 max=30
+K= 1.5 r=0.048 bin=0.10 empty_bins=0.000 n_avalanches=0 max=0
+K= 2.0 r=0.072 bin=0.01 empty_bins=0.444 n_avalanches=2462 max=24
+K= 2.0 r=0.072 bin=0.10 empty_bins=0.000 n_avalanches=0 max=0
+K= 3.0 r=0.149 bin=0.01 empty_bins=0.689 n_avalanches=2105 max=11
+K= 3.0 r=0.149 bin=0.10 empty_bins=0.036 n_avalanches=35 max=555
+K= 5.0 r=0.469 bin=0.01 empty_bins=0.932 n_avalanches=604 max=5
+K= 5.0 r=0.469 bin=0.10 empty_bins=0.536 n_avalanches=212 max=28
