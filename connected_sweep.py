@@ -233,6 +233,7 @@ def main() -> None:
     ax[1].set(xlabel="K", ylabel="chi = N var(r)", title="Susceptibility")
     fig.tight_layout()
     fig.savefig(args.outdir / "r_chi_vs_K.png", dpi=120)
+    fig.savefig(args.outdir / "r_chi_vs_K.svg")
     fig2, ax2 = plt.subplots(figsize=(5, 4))
     for k, s in aval.items():
         if s.size:
@@ -243,6 +244,12 @@ def main() -> None:
     ax2.legend(fontsize=7)
     fig2.tight_layout()
     fig2.savefig(args.outdir / "avalanche_ccdf.png", dpi=120)
+    fig2.savefig(args.outdir / "avalanche_ccdf.svg")
+    csv_path = args.outdir / "sweep.csv"
+    seeds_hdr = [f"r_seed{sd}" for sd in seeds] + [f"chi_seed{sd}" for sd in seeds]
+    header = ",".join(["K", "r_mean", "r_sd", "chi_mean", "chi_sd"] + seeds_hdr)
+    rows = np.column_stack([ks, r_m, r_s, chi_m, chi_s, r_all.T, chi_all.T])
+    np.savetxt(csv_path, rows, delimiter=",", header=header, comments="")
     np.savez_compressed(args.outdir / "sweep.npz", ks=ks, r=r_all, chi=chi_all)
 
 
