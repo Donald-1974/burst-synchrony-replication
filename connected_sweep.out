@@ -1,0 +1,59 @@
+seed 42: 1 component(s), giant component 2000/2000 nodes, mean degree 8.46
+seed 43: 3 component(s), giant component 1998/2000 nodes, mean degree 8.43
+seed 44: 1 component(s), giant component 2000/2000 nodes, mean degree 8.23
+seed 45: 1 component(s), giant component 2000/2000 nodes, mean degree 8.32
+seed 46: 1 component(s), giant component 2000/2000 nodes, mean degree 8.23
+
+N=2000 (before giant-component restriction) r0=0.1 dt=0.02 seeds=5 T_transient=100.0 T_measure=200.0
+     K     <r>     sd      chi      sd
+  0.00   0.020  0.001    0.214   0.028
+  0.20   0.022  0.001    0.247   0.023
+  0.40   0.024  0.001    0.288   0.054
+  0.60   0.027  0.001    0.409   0.060
+  0.80   0.032  0.003    0.503   0.121
+  1.00   0.035  0.002    0.614   0.032
+  1.20   0.039  0.005    0.786   0.204
+  1.40   0.045  0.005    1.058   0.166
+  1.60   0.054  0.003    1.555   0.268
+  1.80   0.063  0.005    1.925   0.401
+  2.00   0.075  0.007    3.264   1.352
+  2.20   0.092  0.010    3.667   0.781
+  2.40   0.105  0.016    5.411   1.458
+  2.60   0.121  0.019    6.040   1.243
+  2.80   0.143  0.014    9.787   2.930
+  3.00   0.164  0.033    9.003   0.769
+  3.20   0.179  0.066   11.682   4.352
+  3.40   0.206  0.042   12.374   1.959
+  3.60   0.246  0.036   18.720  10.203
+  3.80   0.289  0.069   23.614   7.268
+  4.00   0.317  0.059   24.045  16.874
+  4.20   0.364  0.091   20.480  20.161
+  4.40   0.395  0.120   10.202   8.875
+  4.60   0.445  0.108   18.382  14.625
+  4.80   0.526  0.105    8.134  10.473
+  5.00   0.584  0.082    5.327   3.988
+  5.20   0.603  0.073    5.712   6.673
+  5.40   0.649  0.081    9.271  19.187
+  5.60   0.656  0.119    5.343   6.910
+  5.80   0.640  0.121    1.810   2.936
+  6.00   0.682  0.138    0.365   0.365
+  6.20   0.720  0.083    0.124   0.158
+  6.40   0.732  0.078    0.048   0.076
+  6.60   0.785  0.065    0.067   0.128
+  6.80   0.730  0.113   11.600  25.825
+  7.00   0.735  0.167    0.039   0.073
+  7.20   0.820  0.050    0.042   0.076
+  7.40   0.768  0.099    6.945  15.493
+  7.60   0.823  0.065    0.312   0.695
+  7.80   0.795  0.136    2.023   4.523
+  8.00   0.833  0.053    0.034   0.077
+
+chi peak (seed-averaged) at K = 4.00; per-seed peaks: [4.2, 3.6, 4.6, 4.0, 6.8]
+mean-field (all-to-all) Kc = 2/(pi g(0)) = 1.596 for omega ~ N(0,1)
+
+Avalanches (seed 42, bin = mean inter-event interval):
+K= 0.00 spikes=50862 bin=0.00393 n_aval=11764 max=42 | PL alpha=5.00 (at fit-grid limit 5.0: tail too steep for a power law) xmin=13 n_tail=495 KS=0.043 R_vs_exp=-5.2 z=-1.12 p=0.263
+K= 2.00 spikes=32432 bin=0.00617 n_aval=7505 max=40 | PL alpha=5.00 (at fit-grid limit 5.0: tail too steep for a power law) xmin=14 n_tail=244 KS=0.046 R_vs_exp=-4.4 z=-2.01 p=0.0443
+K= 4.00 spikes=7337 bin=0.02725 n_aval=1553 max=74 | PL alpha=3.14 xmin=13 n_tail=122 KS=0.054 R_vs_exp=0.5 z=0.15 p=0.877
+K= 6.00 spikes=228 bin=0.87142 n_aval=47 max=21 | too few avalanches for a tail fit
+K= 8.00 spikes=12 bin=14.91822 n_aval=4 max=7 | too few avalanches for a tail fit
